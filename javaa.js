@@ -1,16 +1,9 @@
-/***********************
- SMART REVISION ENGINE
- DSA LOGIC + UI FIX
-***********************/
 
 let topics = [];
-
-/* PRIORITY CALCULATION (GREEDY) */
 function calculatePriority(topic) {
   return (topic.days * 2) + (100 - topic.score) + (topic.difficulty * 10);
 }
 
-/* ADD TOPIC */
 function addTopic() {
   const name = document.getElementById("topicName").value.trim();
   const difficulty = Number(document.getElementById("difficulty").value);
@@ -39,7 +32,6 @@ function addTopic() {
   clearInputs();
 }
 
-/* INSERTION SORT (DSA) */
 function sortTopics() {
   for (let i = 1; i < topics.length; i++) {
     let key = topics[i];
@@ -53,7 +45,6 @@ function sortTopics() {
   }
 }
 
-/* RENDER REVISION LIST */
 function renderRevision() {
   const list = document.getElementById("revisionList");
   list.innerHTML = "";
@@ -70,7 +61,6 @@ function renderRevision() {
   }
 }
 
-/* STATS */
 function renderStats() {
   document.getElementById("totalTopics").textContent =
     "Total Topics: " + topics.length;
@@ -84,9 +74,9 @@ function renderStats() {
     "Weak Topics: " + weak;
 }
 
-/* CLEAR INPUTS */
 function clearInputs() {
   document.getElementById("topicName").value = "";
   document.getElementById("score").value = "";
   document.getElementById("days").value = "";
+
 }
