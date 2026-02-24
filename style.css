@@ -1,6 +1,4 @@
-/* =====================
-   GLOBAL
-===================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +11,6 @@ body {
   color: #111827;
 }
 
-/* =====================
-   HEADER
-===================== */
 .header {
   background: #0f172a;
   color: white;
@@ -34,9 +29,7 @@ body {
   color: #cbd5f5;
 }
 
-/* =====================
-   CONTAINER (STACKED)
-===================== */
+
 .container {
   max-width: 900px;
   margin: 40px auto;
@@ -44,12 +37,10 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 32px; /* 🔥 real spacing */
+  gap: 32px; 
 }
 
-/* =====================
-   CARD
-===================== */
+
 .card {
   background: #ffffff;
   border-radius: 8px;
@@ -63,9 +54,7 @@ body {
   margin-bottom: 16px;
 }
 
-/* =====================
-   FORM
-===================== */
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -84,9 +73,7 @@ input:focus, select:focus {
   border-color: #2563eb;
 }
 
-/* =====================
-   BUTTON
-===================== */
+
 .primary-btn {
   margin-top: 18px;
   width: 100%;
@@ -104,9 +91,7 @@ input:focus, select:focus {
   background: #1d4ed8;
 }
 
-/* =====================
-   REVISION LIST
-===================== */
+
 .revision-list {
   list-style: none;
 }
@@ -119,20 +104,17 @@ input:focus, select:focus {
   border: 1px solid #e5e7eb;
 }
 
-/* =====================
-   STATS
-===================== */
+
 .stats p {
   margin-top: 10px;
   font-size: 14px;
   font-weight: 500;
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
+
 @media (max-width: 640px) {
   .form-grid {
     grid-template-columns: 1fr;
   }
+
 }
